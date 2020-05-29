@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+  "name": "Twit view thread reader",
+  "version": "1.0",
+  "description": "A google chrome extension to read twitter threads in an easier quick and concise manner.",
+  "icons": {
+    "16": "images/twitView16.png",
+    "32": "images/twitView32.png",
+    "48": "images/twitView48.png",
+    "128": "images/twitView128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "images/twitView16.png",
+      "32": "images/twitView32.png",
+      "48": "images/twitView48.png",
+      "128": "images/twitView128.png"
+    },
+    "default_title": "TwitView - Click to disable extension"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://twitter.com/*/status/*"],
+      "css": ["style.css"],
+      "js": ["bundle.js"]
+    }
+  ],
+  "permissions": [
+    "*://twitter.com/*/status/*",
+    "tabs",
+    "webNavigation",
+    "activeTab",
+    "contextMenus",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "web_accessible_resources": [
+    "style.css",
+    "images/greytwitview.png",
+    "images/twitView48.png",
+    "*://twitter.com/*/status/*"
+  ]
+}
