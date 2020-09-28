@@ -1,9 +1,16 @@
 
 Twitview is a Chrome Extension that makes calls on behalf of the user to the Twitter API and sorts through relevant data related to a twitter thread. It compiles long twitter threads in a clear and concise manner and displays the authors tweet thread in a popup modal instantly.The call is made to the server for access tokens for the API and then it displays the information the user is after in a modal once received from twitter. It has 120 users at the time of writing this
 
+ ###### Download Link
+ https://chrome.google.com/webstore/detail/twitview-thread-unrollrea/ljdegdmkjoondijjmadjgammcbphodjl?hl=en
+ 
+ ###### Demo
+ https://www.youtube.com/watch?v=QDqMFmdnJjo
+ 
+ 
  Built a Vanilla Javascript, HTML, CSS, Node.js Chrome Extension that makes calls on behalf of the user to the Twitter API and sorts through relevant data related to a twitter thread.
  
- https://chrome.google.com/webstore/detail/twitview-thread-unrollrea/ljdegdmkjoondijjmadjgammcbphodjl?hl=en
+
 
 #### The Process
 ![1Final](https://user-images.githubusercontent.com/60879777/94386772-c610be00-018b-11eb-8351-dff1aaefa639.png)
